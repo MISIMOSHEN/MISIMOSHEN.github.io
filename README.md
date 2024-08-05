@@ -8,7 +8,7 @@ first version just for test
 - 😄 
 - ⚡ some websites：
 - <a herf="(https://www.amphibiachina.org/)">
-     <button>1/button>
+     <button>1</button>
 -</a>
 - <a herf="[https://animaldiversity.org]/">
      <button>2</button>
