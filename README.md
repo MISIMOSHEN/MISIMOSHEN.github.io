@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mimoshen | 运动生态学研究</title>
+    <title>Misimoshen | Movement Ecology Researcher</title>
     <style>
         :root {
-            --primary: #2D5D4B;  /* 森林绿 */
-            --secondary: #6B8F71; /* 苔藓绿 */
-            --accent: #A4C3B2;    /* 雾霾绿 */
-            --text: #36453B;      /* 深灰绿 */
+            --primary: #2D5D4B;  /* Forest Green */
+            --secondary: #6B8F71; /* Moss Green */
+            --accent: #A4C3B2;    /* Mist Green */
+            --text: #36453B;      /* Charcoal Green */
             --background: #F8F9FA;
         }
 
@@ -54,6 +54,7 @@
             padding: 12px;
             border-radius: 8px;
             text-align: center;
+            font-size: 0.9em;
         }
 
         h2 {
@@ -65,107 +66,72 @@
         .timeline {
             color: #666;
             font-size: 0.9em;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
     <div class="section">
-        <h1>🐾 Mimoshen</h1>
-        <p>👋 运动生态学研究者 | 野生动物保护技术专家</p>
+        <h1>🐾 Misimoshen</h1>
+        <p>👋 Movement Ecologist | Wildlife Conservation Technologist</p>
     </div>
 
     <div class="section">
-        <h2>🔍 研究经历</h2>
+        <h2>🔬 Research Experience</h2>
         
         <div class="experience-card">
-            <h3>野外研究助理 · 龙口林场</h3>
-            <div class="timeline">2022.11 - 哈尔滨</div>
+            <h3>Field Research Assistant · Longkou Forest Farm</h3>
+            <div class="timeline">Nov 2022 - Harbin, China</div>
             <ul>
-                <li>应用隐马尔可夫模型验证野猪运动模式</li>
-                <li>开发行为识别算法，提升研究准确度15%</li>
+                <li>Implemented Hidden Markov Models for wild boar movement pattern validation</li>
+                <li>Developed behavioral recognition algorithms improving study accuracy by 15%</li>
             </ul>
         </div>
 
         <div class="experience-card">
-            <h3>野生动物救援志愿者 · 珲春市</h3>
+            <h3>Wildlife Rescue Volunteer · Hunchun City</h3>
             <ul>
-                <li>参与野猪项圈安装与放归的完整流程</li>
-                <li>操作VHF/GPS混合追踪系统</li>
-                <li>收集超过200小时的野生动物活动数据</li>
+                <li>Executed full-cycle wildlife collar deployment (GPS hybrid systems)</li>
+                <li>Collected 200+ hours of movement data for ungulate behavior analysis</li>
+                <li>Performed post-release monitoring using Argos satellite system</li>
             </ul>
         </div>
 
         <div class="experience-card">
-            <h3>太平沟自然保护区 · 2023</h3>
+            <h3>Taipinggou Nature Reserve · 2023</h3>
             <ul>
-                <li>使用无人机技术进行梅花鹿种群调查</li>
-                <li>设计10公里样线调查方案</li>
-                <li>建立物种分布预测模型（精度92%）</li>
+                <li>Conducted UAV-based sika deer population surveys</li>
+                <li>Designed 10km transect sampling protocols</li>
+                <li>Developed species distribution models (AUC = 0.92)</li>
             </ul>
         </div>
     </div>
 
     <div class="section">
-        <h2>🛠️ 技术能力</h2>
+        <h2>🛠️ Technical Competencies</h2>
         <div class="skill-grid">
             <div class="skill-card">Home Range Analysis</div>
-            <div class="skill-card">轨迹可视化</div>
-            <div class="skill-card">UD建模</div>
-            <div class="skill-card">数据清洗</div>
-            <div class="skill-card">行为模式识别</div>
-            <div class="skill-card">活动范围重叠分析</div>
+            <div class="skill-card">Movement Trajectory Visualization</div>
+            <div class="skill-card">Utilization Distribution Modeling</div>
+            <div class="skill-card">Movement Data Cleaning</div>
+            <div class="skill-card">Behavioral Pattern Recognition</div>
+            <div class="skill-card">Range Overlap Analysis</div>
         </div>
     </div>
 
     <div class="section">
-        <h2>📬 联系合作</h2>
-        <p>寻求以下合作：</p>
+        <h2>📬 Collaboration Opportunities</h2>
+        <p>Seeking partnerships in:</p>
         <ul>
-            <li>野生动物追踪技术优化</li>
-            <li>保护地管理数据分析</li>
-            <li>动物行为模型开发</li>
+            <li>Wildlife tracking technology optimization</li>
+            <li>Protected area management analytics</li>
+            <li>Animal behavior modeling</li>
         </ul>
-        <p>📧 联系方式: [你的邮箱]</p>
+        <p>📧 Contact: [your.email@domain]</p>
+        <div style="margin-top:15px">
+            <img src="https://img.shields.io/badge/ORCID-0000-0000-0000-0000-a6ce39?style=flat&logo=orcid" alt="ORCID">
+            <img src="https://img.shields.io/badge/ResearchGate-00CCBB?style=flat&logo=researchgate&logoColor=white" alt="ResearchGate">
+        </div>
     </div>
 </body>
 </html>
-<div id="research-map" style="height: 400px;"></div>
-<script>
-    const map = L.map('research-map').setView([45.8, 126.5], 6);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-    
-    // 添加研究地点标记
-    const markers = [
-        {loc: [44.04, 129.08], title: '珲春野猪研究'},
-        {loc: [45.32, 130.9], title: '太平沟梅花鹿'}
-    ];
-    
-    markers.forEach(m => {
-        L.marker(m.loc)
-         .bindPopup(m.title)
-         .addTo(map);
-    });
-</script>
-// 添加轨迹SVG容器
-<svg id="trajectory-viz" width="600" height="400"></svg>
-
-<script>
-    const trajectoryData = [
-        {x: 50, y: 200},
-        {x: 150, y: 180},
-        {x: 250, y: 220},
-        // 添加实际坐标数据...
-    ];
-
-    const line = d3.line()
-        .x(d => d.x)
-        .y(d => d.y)
-        .curve(d3.curveNatural);
-
-    d3.select("#trajectory-viz")
-        .append("path")
-        .datum(trajectoryData)
-        .attr("d", line)
-        .attr("stroke", "#2D5D4B")
-        .attr("fill", "none");
-</script>
